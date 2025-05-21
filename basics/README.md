@@ -1,2 +1,2 @@
-#!/bin/bash
+#Shell Basics
 This is my first line of scripting.
