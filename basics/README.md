@@ -1,4 +1,2 @@
-# alu-shell
-Shell-basics
-This is my first task in shell basics. 
-hello world
+#!/bin/bash
+This is my first line of scripting.
