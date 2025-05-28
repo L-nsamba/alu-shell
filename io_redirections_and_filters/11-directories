@@ -1,0 +1,2 @@
+#!/bin/bash
+find /root/alu-shell/io_redirections_and_filters/  |  wc -l
