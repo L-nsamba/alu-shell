@@ -1,2 +1,2 @@
 #!/bin/bash
-find /root/alu-shell/io_redirections_and_filters/  |  wc -l
+find .  -type d ! -name '.' | wc -l
