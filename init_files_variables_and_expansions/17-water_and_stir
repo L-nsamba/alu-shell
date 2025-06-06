@@ -1,2 +1,2 @@
 #!/bin/bash
-echo bestchol
+tr 'watre' '01234' <<< $WATER | xargs -I {} echo $((5#{} + 3#$(tr 'ti.r' '012' <<< $STIR))) | tr '012345678' 'bestchol'
