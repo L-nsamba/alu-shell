@@ -1,3 +1,2 @@
 #!/bin/bash
-echo $((2#$((2#$(echo $WATER|tr 'ewatr' 01234)) + 2#$(echo $STIR|tr 'ti.r' 0123)))) | tr 0123456789 bestcholhc
-
+echo "obase=bestchol; ibase=water; $WATER + ibase=stir; $STIR" | bc
