@@ -1,3 +1,2 @@
 #!/bin/bash
-n=$((2#${WATER//[^t]/0}+2#${STIR//[^t]/0}));r=;for((i=n;i;i/=9))do r=${r#}${b=bestchol:${i%9}:1}$r;done;echo ${r:-${b=bestchol:0:1}}
-
+n=$((2#${WATER//[^t]/0}+2#${STIR//[^t]/0}));r=;for((i=n;i;i/=9))do r=${r#}${b=bestchol:${i%9}:1}$r;done;echo ${r:-${b=bestchol:0:1}} 
