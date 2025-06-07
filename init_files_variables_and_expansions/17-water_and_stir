@@ -1,2 +1,3 @@
 #!/bin/bash
-tr 'watre' '01234' <<< $WATER | xargs -I {} echo $((5#{} + 3#$(tr 'ti.r' '012' <<< $STIR))) | tr '012345678' 'bestchol'
+echo $((2#${WATER//t/1} + 2#${STIR//t/1}))
+
