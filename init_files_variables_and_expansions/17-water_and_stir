@@ -1,2 +1,2 @@
 #!/bin/bash
-n=$((2#${WATER//[^t]/0}+2#${STIR//[^t]/0}));r=;for((i=n;i;i/=9))do r=${r#}${b=bestchol:${i%9}:1}$r;done;echo ${r:-${b=bestchol:0:1}} 
+printf '%o\n' $(( 5#$(echo "$WATER" | tr 'water' '01234') + 5#$(echo "$STIR" | tr 'stir.' '01234') )) | tr '01234567' 'bestchol'
