@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$WATER$STIR" | tr 'ew.atris' 'shtbeolhc'
+BASE1=ewatr BASE2=tir. BASE3=shtbeolhc N=0 M=0 for i in $(echo $WATER | grep -o .); do N=$((N * 5 + $(expr index $BASE1 $i) - 1)); done for i in $(echo $STIR | grep -o .); do M=$((M * 4 + $(expr index $BASE2 $i) - 1)); done R=$((N + M)) O="" while [ $R -gt 0 ]; do C=$((R % 9)) O=${BASE3:$C:1}$O R=$((R / 9)); done echo ${O:-${BASE3:0:1}}
