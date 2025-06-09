@@ -3,7 +3,7 @@
 
 best_school=0
 
-until [ $best_school -eq 9 ]
+until [ $best_school -eq 10 ]
 do
 	echo "Best School"
 	best_school=$(( best_school + 1 ))
