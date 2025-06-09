@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+#Script to display first 20 numbers. 4, 9 & 17 have special output
+
+myvar=1
+
+while [ $myvar -le 20 ]
+do
+case $myvar in 
+	
+	4) echo "4" 
+	   echo "bad luck from China"
+	;;
+	
+	9) echo "9"
+	   echo "bad luck from Japan"
+	;;
+	
+	17) echo "17"
+	    echo "bad luck from Itay"
+	;;
+
+	*)  echo "$myvar"
+esac
+
+	myvar=$(( myvar + 1 ))
+done
