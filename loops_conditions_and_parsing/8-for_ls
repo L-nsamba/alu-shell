@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#This script lists all files that are not hidden and removes number from filename
 for file in *; do
     if [[ "$file" == .* ]]; then
         continue
