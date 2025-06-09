@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-#Script to display Best School 10 times using a while loop
+#The script displays Best School 10 times using a while loop
 
 best_school=0
 
-while [ $best_school -le 10 ]
+while [ $best_school -le 9 ]
 do
 	echo "Best School"
 	best_school=$(( best_school + 1 ))
