@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#Script loops 1-10 and displays different output for 8 and 4
+
+myvar=1
+
+while [ $myvar -le 10 ]
+do 
+	if [ $myvar -eq 4 ];then
+	echo "bad luck"
+
+	elif [ $myvar -eq 8 ];then
+	echo "good luck"
+
+	else
+	echo "Best School"
+	fi
+	myvar=$(( myvar + 1 ))
+done
