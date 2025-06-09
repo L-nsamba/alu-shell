@@ -16,7 +16,7 @@ case $myvar in
 	;;
 	
 	17) echo "17"
-	    echo "bad luck from Itay"
+	    echo "bad luck from Italy"
 	;;
 
 	*)  echo "$myvar"
