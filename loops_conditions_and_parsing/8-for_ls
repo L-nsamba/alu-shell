@@ -1,0 +1,11 @@
+#!/bin/bash
+for file in *; do
+    if [[ "$file" == .* ]]; then
+        continue
+    fi
+    if [[ "$file" == *-* ]]; then
+        echo "${file#*-}"
+    else
+        echo "$file"
+    fi
+done
