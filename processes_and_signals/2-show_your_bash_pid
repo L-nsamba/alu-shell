@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script displays all lines in ps aux with bash
+
+ps auxf | grep bash
