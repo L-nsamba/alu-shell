@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script to kill the 7-highlander process forcefully
+
+# Find and kill the process using SIGKILL (cannot be ignored)
+if pkill -9 -f "7-highlander"; then
+    exit 0  # Success (silent exit)
+else
+    echo "Error: 7-highlander process not found." >&2
+    exit 1
+fi
