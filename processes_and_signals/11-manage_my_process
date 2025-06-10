@@ -19,8 +19,13 @@ stop_process() {
 }
 
 restart_process() {
-    stop_process
-    start_process
+    if [ -f "$PIDFILE" ]; then
+        PID=$(cat "$PIDFILE")
+        kill "$PID" 2>/dev/null
+        rm -f "$PIDFILE"
+    fi
+    ./manage_my_process &
+    echo $! > "$PIDFILE"
     echo "manage_my_process restarted"
 }
 
