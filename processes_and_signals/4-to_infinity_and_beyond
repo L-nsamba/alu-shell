@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#This script displays to infinity and beyong indefinietly
+
+myvar="To infinity and beyond"
+
+while true
+do
+	echo "$myvar"
+	sleep 2
+done
