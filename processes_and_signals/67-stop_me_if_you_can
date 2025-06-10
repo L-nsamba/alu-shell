@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script: 67-stop_me_if_you_can (kills 7-highlander instead of 4-to_infinity_and_beyond)
+
+# Find and send SIGTERM to 7-highlander
+if pkill -f "7-highlander"; then
+    exit 0  # Success (silent exit)
+else
+    echo "Failed to stop 7-highlander (maybe it wasn't running?)." >&2
+    exit 1
+fi
